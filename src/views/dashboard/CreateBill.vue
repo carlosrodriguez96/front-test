@@ -144,6 +144,7 @@
   </v-container>
 </template>
 <script>
+// import service 
 import billService from "@/services/billService.js";
 export default {
   data() {
@@ -185,6 +186,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * function that allows adding items to the invoice
+     */
     addItem() {
       this.item.total_value = this.item.quantity * this.item.unit_value;
       this.value = this.value + this.item.total_value;

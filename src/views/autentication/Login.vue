@@ -10,8 +10,7 @@
             <v-toolbar color="primary" flat class="white--text">
               <v-toolbar-title>Login</v-toolbar-title>
             </v-toolbar>
-            <v-card-text>
-              <!--<v-img src="@/assets/img/logo_blanco.png" height="300" ></v-img>-->
+            <v-card-text>              
               <v-form ref="form" v-model="valid" lazy-validation>
                 <v-text-field
                   prepend-inner-icon="mdi-gmail"
@@ -73,6 +72,7 @@ export default {
     },
   }),
   methods: {
+    //function for user login
     login: function () {
       this.overlay = true;
       var data = {

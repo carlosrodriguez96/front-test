@@ -96,6 +96,9 @@ export default {
       this.getById();
   },
   methods: {
+    /**
+     * function that brings the invoice by id
+     */
     getById() {
       let id = this.$route.params.id;
       var options = {

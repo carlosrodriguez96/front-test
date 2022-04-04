@@ -62,6 +62,9 @@ export default {
     this.getBills();
   },
   methods: {
+    /**
+     * function that brings the list of invoices
+     */
     getBills() {
       var options = {
         headers: {
@@ -85,6 +88,9 @@ export default {
           console.log(error);
         });
     },
+    /**
+     * function to consult invoice by id
+     */
     goToDetails(id){
         this.$router.push({ path: "/bill/" +id })
     }
